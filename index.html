@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Notebook</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/tesseract.js@2/dist/tesseract.min.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Smart Notebook</h1>
+        <div class="notebook-form">
+            <label for="subject">Select Subject:</label>
+            <select id="subject" name="subject">
+                <option value="science">Science</option>
+                <option value="math">Math</option>
+                <option value="history">History</option>
+                <option value="english">English</option>
+            </select>
+
+            <div class="scanner">
+                <p>Upload or scan your notes:</p>
+                <input type="file" id="upload" accept="image/*" capture="camera">
+                <button id="scanBtn">Scan Page</button>
+            </div>
+
+            <div class="output">
+                <p id="result">Scanned text will appear here...</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
